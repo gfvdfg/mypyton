@@ -1,0 +1,17 @@
+w = float(input("กรุณาป้อนน้ำหนักตัว (กิโลกรัม): "))
+h = float(input("กรุณาป้อนส่วนสูง (เซนติเมตร): "))
+
+h_m = h / 100 
+bmi = w / (h_m ** 2)
+
+print("BMI : %.2f"%bmi)
+if bmi < 18.5:
+    print("น้ำหนักน้อย")
+elif 18.5 <= bmi < 22.9:
+    print("น้ำหนักปกติ")
+elif 23 <= bmi < 24.9:
+    print("ท้วม")
+elif 25 <= bmi < 29.9:
+    print("อ้วน")
+else:
+    print("อ้วนมาก")
